@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Era OGFN Season 5</title>
+  <link rel="icon" type="image/png" href="https://cdn.discordapp.com/icons/802558747695120414/eab22b0cbb606250bd18a59ed03f3929.webp?size=80&quality=lossless">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-image: url('https://i.ytimg.com/vi/woZjiDSVZFo/maxresdefault.jpg'); /* Background image */
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 0.3em;
+      color: #33ccff;
+    }
+
+    p {
+      font-size: 1.2em;
+      max-width: 600px;
+      margin: 0 auto 2em auto;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .download-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+
+    .download-btn {
+      background-color: #33ccff;
+      border: none;
+      padding: 15px 30px;
+      border-radius: 12px;
+      color: white;
+      font-size: 1.2em;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .download-btn:hover {
+      background-color: #0099cc;
+    }
+
+    .video-container img {
+      width: 400px;
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+      cursor: pointer;
+    }
+
+    .video-container p {
+      margin-top: 10px;
+      font-size: 1em;
+      color: #fff;
+    }
+
+    .features {
+      margin-top: 50px;
+      max-width: 800px;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .features h2 {
+      margin-bottom: 15px;
+      font-size: 2em;
+      color: #33ccff;
+    }
+
+    .features ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .features li {
+      font-size: 1.1em;
+      margin: 10px 0;
+      color: #e0e0e0;
+    }
+
+    /* Hidden section, even more hidden */
+    .hidden-section {
+      visibility: hidden; /* Make it invisible, but still takes up space */
+      position: absolute; /* Keep it out of the layout */
+      top: -9999px; /* Off the screen */
+      left: -9999px; /* Off the screen */
+      margin-top: 50px;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      border-radius: 12px;
+      color: white;
+      font-size: 1.2em;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+      transition: visibility 0.5s ease, top 0.5s ease, left 0.5s ease; /* Smooth transition */
+    }
+
+    .hidden-section a {
+      color: #33ccff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Project Era OGFN Season 5</h1>
+  <p>Discover Season 5 of Project Era OGFN. An epic adventure where each chapter changes the game. Get ready for the next step!</p>
+  
+  <div class="download-section">
+    <a class="download-btn" href="https://discord.gg/officialerafn" target="_blank">Download Era</a>
+    <div class="video-container">
+      <a href="https://www.youtube.com/watch?v=W8sgvTP2vyE" target="_blank">
+        <img src="https://img.youtube.com/vi/W8sgvTP2vyE/hqdefault.jpg" alt="YouTube Video">
+        <p>▶️ Watch the Season 5 trailer</p>
+      </a>
+    </div>
+  </div>
+
+  <div class="features">
+    <h2>Features of Project Era Season 5:</h2>
+    <ul>
+      <li>🚀 New gameplay content for full immersion</li>
+      <li>🎮 Exclusive missions and challenges for this season</li>
+      <li>🏆 Unique rewards to collect</li>
+      <li>🎥 Enhanced graphics and performance optimization</li>
+      <li>🔧 New gameplay mechanics for an unprecedented experience</li>
+      <li>📢 Server improvements for a smoother gaming experience</li>
+    </ul>
+  </div>
+
+  <!-- Hidden Section -->
+  <div class="hidden-section" id="chair">
+    <h2>Secret Chair Section</h2>
+    <p>This section is hidden until you reach the bottom of the page. Here, you can place hidden content or links for special access. <a href="https://666teamm.github.io/eraogfn/chair.html" target="_blank">Click here for more</a></p>
+  </div>
+
+  <script>
+    // Automatically reveal the hidden section when the user reaches the bottom of the page
+    window.onscroll = function() {
+      if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+        var chairSection = document.getElementById("chair");
+        chairSection.style.visibility = "visible";  // Make the section visible
+        chairSection.style.top = "50px";  // Bring the section into view
+        chairSection.style.left = "50px";  // Correctly position the section
+      }
+    };
+  </script>
+</body>
+</html>
